@@ -15,18 +15,18 @@ export function Hero() {
 
   const floatingCards = [
     {
-      name: "Netflix Premium",
-      price: "₹299",
+      name: "Netflix 4k",
+      price: "₹125",
       originalPrice: "₹799",
-      color: "bg-red-500",
+      color: "bg-red-800",
       icon: "N",
       delay: "0ms",
     },
     {
-      name: "Spotify Family",
+      name: "Spotify",
       price: "₹199",
       originalPrice: "₹399",
-      color: "bg-green-500",
+      color: "bg-green-600",
       icon: "S",
       delay: "200ms",
     },
@@ -34,14 +34,14 @@ export function Hero() {
       name: "Adobe Creative",
       price: "₹1999",
       originalPrice: "₹29000",
-      color: "bg-purple-500",
+      color: "bg-purple-700",
       icon: "Ai",
       delay: "400ms",
     },
     {
       name: "LinkedIn Premium",
-      price: "₹199",
-      originalPrice: "₹2500",
+      price: "₹799",
+      originalPrice: "₹2399",
       color: "bg-blue-600",
       icon: "in",
       delay: "600ms",
@@ -162,7 +162,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-600 text-white hover:border-cyan-500 hover:bg-cyan-500/10 hover:text-cyan-400 px-8 py-6 text-lg group"
+                className="border-2 border-gray-600 text-black hover:border-cyan-500 hover:bg-cyan-500/10 hover:text-cyan-400 px-8 py-6 text-lg group"
                 asChild
               >
                 <a href="/subscriptions">

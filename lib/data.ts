@@ -176,6 +176,7 @@ export const categories: Category[] = [
     id: "linkedin",
     name: "LinkedIn",
     slug: "linkedin",
+    image: "/images/linkedin1.png",
     description: "Professional networking and career development tools",
     count: products.filter((p) => p.category === "linkedin").length,
   },
@@ -183,6 +184,7 @@ export const categories: Category[] = [
     id: "creative",
     name: "Creative Tools",
     slug: "creative",
+    image: "/images/creative.png",
     description: "Design, video editing, and creative software",
     count: products.filter((p) => p.category === "creative").length,
   },
@@ -190,6 +192,7 @@ export const categories: Category[] = [
     id: "developer",
     name: "Developer Tools",
     slug: "developer",
+    image: "/images/dev.png",
     description: "Programming tools and development resources",
     count: products.filter((p) => p.category === "developer").length,
   },
@@ -197,6 +200,7 @@ export const categories: Category[] = [
     id: "entertainment",
     name: "Entertainment",
     slug: "entertainment",
+    image: "/images/enter.png",
     description: "Streaming services and entertainment platforms",
     count: products.filter((p) => p.category === "entertainment").length,
   },
@@ -204,6 +208,7 @@ export const categories: Category[] = [
     id: "music",
     name: "Music",
     slug: "music",
+    image: "/images/music.png",
     description: "Music streaming and audio platforms",
     count: products.filter((p) => p.category === "music").length,
   },
@@ -211,6 +216,7 @@ export const categories: Category[] = [
     id: "marketing",
     name: "Marketing",
     slug: "marketing",
+    image: "/images/market.png",
     description: "Marketing tools and lead generation software",
     count: products.filter((p) => p.category === "marketing").length,
   },
@@ -222,7 +228,7 @@ export const banners = [
     title: "Netflix Premium",
     subtitle: "From ₹299",
     description: "4K Ultra HD, 4 Screens, Ad-free streaming",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/Netflix.png",
     bgColor: "bg-gradient-to-r from-red-500 to-red-600",
     decorativeElements: ["🎬", "🍿", "📺"],
     ctaText: "Order Now",
@@ -233,7 +239,7 @@ export const banners = [
     title: "Adobe Creative Suite",
     subtitle: "From ₹1,999",
     description: "Photoshop, Illustrator, Premiere Pro & more",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/Adobeicon.png",
     bgColor: "bg-gradient-to-r from-purple-500 to-purple-600",
     decorativeElements: ["🎨", "✨", "🖌️"],
     ctaText: "Get Started",
@@ -244,7 +250,7 @@ export const banners = [
     title: "Spotify Family",
     subtitle: "From ₹199",
     description: "6 Premium accounts, Ad-free music",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/Spotifyicon.png",
     bgColor: "bg-gradient-to-r from-green-500 to-green-600",
     decorativeElements: ["🎵", "🎧", "🎤"],
     ctaText: "Listen Now",
@@ -325,6 +331,7 @@ export const getProductsByCategory = (category: string) => {
 export const getProductBySlug = (slug: string) => {
   return products.find((product) => product.slug === slug)
 }
+
 
 export const getAllCategories = () => {
   return categories

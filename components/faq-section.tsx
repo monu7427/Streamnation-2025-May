@@ -54,14 +54,14 @@ export function FAQSection() {
   }
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className=" p-8 md:py-20 bg-white relative overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-40 h-40 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full opacity-50 animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full opacity-50 animate-pulse delay-1000"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Frequently Asked{" "}
@@ -72,7 +72,7 @@ export function FAQSection() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2 md:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}

@@ -139,42 +139,9 @@ export function SearchSection() {
           )}
         </div>
 
-        {/* Trending Searches */}
-        <div className="text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <TrendingUp className="w-5 h-5 text-gray-500" />
-            <span className="text-gray-600 font-medium">Trending Searches</span>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {trendingSearches.map((term, index) => (
-              <button
-                key={index}
-                onClick={() => handleTrendingClick(term)}
-                className="px-4 py-2 bg-gray-100 hover:bg-cyan-100 text-gray-700 hover:text-cyan-700 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105"
-              >
-                {term}
-              </button>
-            ))}
-          </div>
-        </div>
+     
 
-        {/* Quick Category Access */}
-        <div className="mt-8 text-center">
-          <p className="text-gray-600 mb-4">Or browse by category</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.slice(0, 6).map((category) => (
-              <Button
-                key={category.id}
-                variant="outline"
-                size="sm"
-                className="rounded-full border-2 hover:border-cyan-500 hover:bg-cyan-50"
-                onClick={() => router.push(`/subscriptions/${category.slug}`)}
-              >
-                {category.name}
-              </Button>
-            ))}
-          </div>
-        </div>
+ 
       </div>
     </section>
   )

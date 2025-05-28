@@ -16,15 +16,16 @@ import {
 } from "lucide-react"
 import { getAllCategories } from "@/lib/data"
 
+// Ensure these keys match the `icon` property returned from `getAllCategories()`
 const iconMap = {
-  Play,
-  Palette,
-  Code,
-  TrendingUp,
-  Music,
-  Briefcase,
-  Gamepad2,
-  BookOpen,
+  Play: Play,
+  Palette: Palette,
+  Code: Code,
+  TrendingUp: TrendingUp,
+  Music: Music,
+  Briefcase: Briefcase,
+  Gamepad2: Gamepad2,
+  BookOpen: BookOpen,
 }
 
 export function CategoryNavigation() {
@@ -86,7 +87,11 @@ export function CategoryNavigation() {
                   <div
                     className={`w-14 h-14 lg:w-16 lg:h-16 ${category.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-xl relative overflow-hidden`}
                   >
-                    <IconComponent className="w-7 h-7 lg:w-8 lg:h-8 text-white relative z-10" />
+                    <img
+  src={category.image}
+  alt={category.name}
+  className="w-full h-full p-2 object-contain relative z-10"
+/>
                     <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <span className="text-sm font-medium text-gray-700 group-hover:text-cyan-600 transition-colors duration-300 text-center leading-tight">
@@ -106,7 +111,6 @@ export function CategoryNavigation() {
 
         {/* Mobile Slider View */}
         <div className="md:hidden relative">
-          {/* Scroll Buttons */}
           {canScrollLeft && (
             <button
               onClick={() => scroll("left")}
@@ -125,10 +129,9 @@ export function CategoryNavigation() {
             </button>
           )}
 
-          {/* Scrollable Container */}
           <div
             ref={scrollContainerRef}
-            className="flex items-center space-x-4 overflow-x-auto scrollbar-hide px-8 py-2"
+            className="flex items-center justify-center space-x-4 overflow-x-auto scrollbar-hide px-8 py-2"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {categories.map((category) => {
@@ -146,7 +149,11 @@ export function CategoryNavigation() {
                   <div
                     className={`w-12 h-12 ${category.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-md group-hover:shadow-lg relative overflow-hidden`}
                   >
-                    <IconComponent className="w-5 h-5 text-white relative z-10" />
+                    <img
+  src={category.image}
+  alt={category.name}
+  className="w-full h-full p-2 object-contain relative z-10"
+/>
                     <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <span className="text-xs font-medium text-gray-700 group-hover:text-cyan-600 transition-colors duration-300 text-center leading-tight">

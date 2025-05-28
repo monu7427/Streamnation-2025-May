@@ -66,8 +66,9 @@ export function RelatedProducts({ currentProduct, limit = 6 }: RelatedProductsPr
 
         {/* Products Container */}
         <div className="relative overflow-hidden">
+          {/* For mobile: scrollable horizontally and hide scrollbar */}
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex md:transition-transform md:duration-500 md:ease-in-out gap-2 md:gap-0 overflow-x-auto md:overflow-x-hidden scrollbar-hide"
             style={{
               transform: `translateX(-${currentIndex * (100 / itemsPerView.desktop)}%)`,
             }}
@@ -78,15 +79,18 @@ export function RelatedProducts({ currentProduct, limit = 6 }: RelatedProductsPr
               const discount = Math.round(((highestOriginalPrice - lowestPrice) / highestOriginalPrice) * 100)
 
               return (
-                <div key={product.id} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-3 py-2">
+                <div
+                  key={product.id}
+                  className="w-4/5 sm:w-2/3 md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-3 py-2"
+                >
                   <Link href={`/product/${product.slug}`} className="block">
-                    <div className="bg-white rounded-xl md:rounded-2xl s  transition-all duration-300 overflow-hidden border border-gray-100 group">
+                    <div className="bg-white rounded-xl md:rounded-2xl transition-all duration-300 overflow-hidden border border-gray-100 group">
                       {/* Product Image */}
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <img
                           src={product.images[0] || "/placeholder.svg"}
                           alt={product.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         {discount > 0 && (
                           <Badge className="absolute top-2 md:top-3 left-2 md:left-3 bg-green-500 text-white text-xs px-2 py-1">
@@ -132,20 +136,7 @@ export function RelatedProducts({ currentProduct, limit = 6 }: RelatedProductsPr
           </div>
         </div>
 
-        {/* Mobile Navigation Dots */}
-        <div className="flex justify-center mt-4 md:hidden">
-          <div className="flex space-x-2">
-            {Array.from({ length: Math.ceil(relatedProducts.length / itemsPerView.mobile) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  currentIndex === index ? "bg-cyan-500 scale-125" : "bg-gray-300"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   )

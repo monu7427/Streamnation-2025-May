@@ -65,7 +65,7 @@ export function PromotionalBanner() {
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <Button
                   size="lg"
-                  className="bg-white text-gray-900 hover:bg-gray-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg group"
+                  className="bg-white z-50 cursor-pointer text-gray-900 hover:bg-gray-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg group"
                   asChild
                 >
                   <Link href={banner.ctaLink}>
@@ -76,7 +76,7 @@ export function PromotionalBanner() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg"
+                  className="border-2 border-white text-black hover:bg-white hover:text-gray-700 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg"
                   asChild
                 >
                   <Link href={banner.ctaLink}>
@@ -102,19 +102,19 @@ export function PromotionalBanner() {
           {/* Navigation */}
           <button
             onClick={prevBanner}
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 hover:scale-110 z-50"
           >
             <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
           </button>
           <button
             onClick={nextBanner}
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 hover:scale-110"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 hover:scale-110 z-50"
           >
             <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
           </button>
 
           {/* Dots */}
-          <div className="absolute bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-50">
             {banners.map((_, index) => (
               <button
                 key={index}

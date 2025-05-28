@@ -93,11 +93,11 @@ export function CustomerReviews() {
   const maxIndex = Math.max(0, customerReviews.length - itemsPerView.desktop)
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1 > maxIndex ? 0 : prev + 1))
+    setCurrentIndex((prev) => (prev + 1 > maxIndex ? 0 : prev + 2))
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 < 0 ? maxIndex : prev - 1))
+    setCurrentIndex((prev) => (prev - 1 < 0 ? maxIndex : prev - 2))
   }
 
   const toggleLike = (reviewId: number) => {
@@ -125,7 +125,7 @@ export function CustomerReviews() {
 
         <div className="relative">
           {/* Reviews Container */}
-          <div className="overflow-hidden">
+          <div className="overflow-x-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{

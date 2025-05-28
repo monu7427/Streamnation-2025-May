@@ -14,9 +14,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <CategoryNavigation />
-      <SearchSection />
       <PromotionalBanner />
+      <SearchSection />
+      <CategoryNavigation />
+      
       <ProductShowcase title="Best of Entertainment" category="entertainment" />
       <ProductShowcase title="Creative & Design Tools" category="creative" bgColor="bg-gray-50" />
       <ProductShowcase title="Professional LinkedIn" category="linkedin" />
