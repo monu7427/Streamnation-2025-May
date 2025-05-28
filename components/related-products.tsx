@@ -78,9 +78,9 @@ export function RelatedProducts({ currentProduct, limit = 6 }: RelatedProductsPr
               const discount = Math.round(((highestOriginalPrice - lowestPrice) / highestOriginalPrice) * 100)
 
               return (
-                <div key={product.id} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-3">
+                <div key={product.id} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 md:px-3 py-2">
                   <Link href={`/product/${product.slug}`} className="block">
-                    <div className="bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
+                    <div className="bg-white rounded-xl md:rounded-2xl s  transition-all duration-300 overflow-hidden border border-gray-100 group">
                       {/* Product Image */}
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <img

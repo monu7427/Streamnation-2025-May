@@ -200,7 +200,7 @@ export default function SubscriptionsPage() {
                   <img
                     src={product.images[0] || "/placeholder.svg"}
                     alt={product.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                   {discount > 0 && (
                     <Badge className="absolute top-4 left-4 bg-gradient-to-r from-green-500 to-green-600 text-white">

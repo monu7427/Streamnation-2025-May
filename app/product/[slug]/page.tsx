@@ -130,19 +130,19 @@ Thank you!`
           </Link>
         </Button>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8">
           {/* Product Images */}
-          <div className="space-y-4 lg:space-y-6">
-            <div className="relative aspect-square rounded-2xl lg:rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-xl group">
+          <div className="space-y-2 lg:space-y-6">
+            <div className="relative aspect-square  group">
               <Image
                 src={product.images[selectedImageIndex] || "/placeholder.svg"}
                 alt={product.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-contain group-hover:scale-105 transition-transform duration-500"
               />
 
               {/* Share Button */}
-              <div className="absolute top-3 lg:top-4 right-3 lg:right-4">
+              <div className="absolute top-3 lg:top-8 right-3 lg:right-4">
                 <div className="relative">
                   <Button
                     size="icon"
@@ -200,7 +200,7 @@ Thank you!`
               </div>
 
               {/* Like Button */}
-              <div className="absolute top-3 lg:top-4 left-3 lg:left-4">
+              <div className="absolute top-3 lg:top-8 left-3 lg:left-4">
                 <Button
                   size="icon"
                   variant="outline"
@@ -359,26 +359,7 @@ Thank you!`
                 </a>
               </Button>
 
-              <div className="flex space-x-3 lg:space-x-4">
-                <Button
-                  variant="outline"
-                  className="flex-1 border-2 border-gray-200 hover:border-red-500 hover:bg-red-50 group py-3 lg:py-4"
-                  onClick={() => setIsLiked(!isLiked)}
-                >
-                  <Heart
-                    className={`w-4 h-4 mr-2 ${isLiked ? "fill-current text-red-500" : "group-hover:text-red-500"}`}
-                  />
-                  <span className="text-sm lg:text-base">{isLiked ? "Added to Wishlist" : "Add to Wishlist"}</span>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="flex-1 border-2 border-gray-200 hover:border-blue-500 hover:bg-blue-50 group py-3 lg:py-4"
-                  onClick={() => setShowShareMenu(!showShareMenu)}
-                >
-                  <Share2 className="w-4 h-4 mr-2 group-hover:text-blue-500" />
-                  <span className="text-sm lg:text-base">Share Product</span>
-                </Button>
-              </div>
+            
             </div>
 
             {/* Trust Badges */}
