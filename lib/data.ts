@@ -17,7 +17,7 @@ export const products: Product[] = [
     description: "Premium tools for sales research and lead generation on LinkedIn.",
     category: "linkedin",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"],
+    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "1 Month", price: 199, originalPrice: 2500, subPrice: "For new & old accounts" },
       { name: "6 Months", price: 999, originalPrice: 15000, subPrice: "For new & old accounts" },
@@ -32,7 +32,7 @@ export const products: Product[] = [
     description: "Essential recruiting tools for HR professionals.",
     category: "linkedin",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "4 Months", price: 1499, originalPrice: 20000, subPrice: "Limited slots available" }
     ],
@@ -45,7 +45,7 @@ export const products: Product[] = [
     description: "Boost your LinkedIn marketing campaigns with ad credit.",
     category: "linkedin",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "₹7,000 Credit", price: 999, originalPrice: 7000, subPrice: "Valid for 30 days" }
     ],
@@ -60,7 +60,7 @@ export const products: Product[] = [
     description: "Full suite access: Photoshop, Illustrator, and more.",
     category: "creative",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/adobe.jpg", "/images/adove.jpg", "/images/adobe3.png"],
     variations: [
       { name: "12 Months", price: 1999, originalPrice: 29000, subPrice: "All apps included" }
     ],
@@ -73,26 +73,13 @@ export const products: Product[] = [
     description: "Premium design tools: templates, stock photos, collaboration.",
     category: "creative",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/canva1.jpg", "/images/canva.png", "/images/canva3.png", "/images/linkedin4.png"],
     variations: [
       { name: "1 Month", price: 299, originalPrice: 3000, subPrice: "Single user license" },
       { name: "12 Months", price: 699, originalPrice: 15000, subPrice: "Team access (5 users)" },
     ],
     features: ["Premium templates", "Background remover", "Brand kit", "Team collaboration"],
     slug: "canva-pro",
-  },
-  {
-    id: "notion-plus",
-    title: "Notion Plus",
-    description: "Advanced workspace with unlimited blocks and collaboration.",
-    category: "creative",
-    availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
-    variations: [
-      { name: "12 Months", price: 399, originalPrice: 4000, subPrice: "Unlimited blocks" }
-    ],
-    features: ["Unlimited blocks", "File uploads", "Version history", "Advanced permissions"],
-    slug: "notion-plus",
   },
   {
     id: "filmora-pro",
