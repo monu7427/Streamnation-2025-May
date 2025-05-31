@@ -12,26 +12,39 @@ export const businessInfo: BusinessInfo = {
 export const products: Product[] = [
   // LinkedIn
   {
-    id: "linkedin-sales-navigator",
+    id: "linkedin-sales-navigator Advanced",
     title: "LinkedIn Sales Navigator",
     description: "Premium tools for sales research and lead generation on LinkedIn.",
     category: "linkedin",
     availability: true,
     images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
-      { name: "1 Month", price: 199, originalPrice: 2500, subPrice: "For new & old accounts" },
-      { name: "6 Months", price: 999, originalPrice: 15000, subPrice: "For new & old accounts" },
-      { name: "12 Months", price: 1799, originalPrice: 30000, subPrice: "For new accounts only" },
+      { name: "1 Month", price: 1999, originalPrice: 5999, subPrice: "Mail Required" },
+      { name: "12 Months", price: 11999, originalPrice: 72000, subPrice: "Mail Required" },
     ],
-    features: ["Advanced search filters", "InMail credits", "Lead recommendations", "CRM integration"],
-    slug: "linkedin-sales-navigator",
+    features: [
+  "Advanced search filters",
+  "InMail credits",
+  "Lead recommendations",
+  "CRM integration",
+  "Real-time sales updates",
+  "Saved leads and accounts",
+  "TeamLink for warm introductions",
+  "Sales insights and analytics",
+  "Custom lead lists",
+  "Notes and tags for leads",
+  "Mobile app access",
+  "Integration with tools like Salesforce and HubSpot"
+]
+,
+    slug: "linkedin-sales-navigator-advanced",
   },
   {
     id: "linkedin-recruiter-lite",
     title: "LinkedIn Recruiter Lite",
     description: "Essential recruiting tools for HR professionals.",
     category: "linkedin",
-    availability: true,
+    availability: false,
     images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "4 Months", price: 1499, originalPrice: 20000, subPrice: "Limited slots available" }
