@@ -12,46 +12,35 @@ export const businessInfo: BusinessInfo = {
 export const products: Product[] = [
   // LinkedIn
   {
-    id: "linkedin-sales-navigator Advanced",
+    id: "linkedin-business-premium",
+    title: "LinkedIn Business Premium",
+    description: "Premium tools for sales research and lead generation on LinkedIn.",
+    category: "linkedin",
+    availability: true,
+    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
+    variations: [
+      { name: "12 Month", price: 3999, originalPrice: 25000, subPrice: "For new & old accounts , will provide activation link " },
+      { name: "3 Month", price: 999, originalPrice: 4999, subPrice: "For new & old accounts , will provide activation link  " },
+     
+    ],
+    features: ["Advanced search filters", "15 InMail credits per month", "Lead recommendations", "CRM integration"],
+    slug: "linkedin-business-premium",
+  },
+  {
+    id: "linkedin-sales-navigator",
     title: "LinkedIn Sales Navigator",
     description: "Premium tools for sales research and lead generation on LinkedIn.",
     category: "linkedin",
     availability: true,
     images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
-      { name: "1 Month", price: 1999, originalPrice: 5999, subPrice: "Mail Required" },
-      { name: "12 Months", price: 11999, originalPrice: 72000, subPrice: "Mail Required" },
+      { name: "1 Month", price: 1999, originalPrice: 7900, subPrice: "For new & old accounts only your mail required for activation" },
+     
     ],
-    features: [
-  "Advanced search filters",
-  "InMail credits",
-  "Lead recommendations",
-  "CRM integration",
-  "Real-time sales updates",
-  "Saved leads and accounts",
-  "TeamLink for warm introductions",
-  "Sales insights and analytics",
-  "Custom lead lists",
-  "Notes and tags for leads",
-  "Mobile app access",
-  "Integration with tools like Salesforce and HubSpot"
-]
-,
-    slug: "linkedin-sales-navigator-advanced",
+    features: ["Advanced search filters", "InMail credits", "Lead recommendations", "CRM integration"],
+    slug: "linkedin-sales-navigator",
   },
-  {
-    id: "linkedin-recruiter-lite",
-    title: "LinkedIn Recruiter Lite",
-    description: "Essential recruiting tools for HR professionals.",
-    category: "linkedin",
-    availability: false,
-    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
-    variations: [
-      { name: "4 Months", price: 1499, originalPrice: 20000, subPrice: "Limited slots available" }
-    ],
-    features: ["Candidate search", "InMail messaging", "Talent insights"],
-    slug: "linkedin-recruiter-lite",
-  },
+ 
   {
     id: "linkedin-ads-credit",
     title: "LinkedIn Ads Credit",
@@ -60,11 +49,27 @@ export const products: Product[] = [
     availability: true,
     images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
-      { name: "₹7,000 Credit", price: 999, originalPrice: 7000, subPrice: "Valid for 30 days" }
+      { name: "₹7,000 Credit", price: 1199, originalPrice: 7000, subPrice: "Activation by coupon code" },
+      { name: "₹15,000 Credit", price: 1899, originalPrice: 1500, subPrice: "Activation by coupon code" },
+      { name: "₹25,000 Credit", price: 2300, originalPrice: 25000, subPrice: "Activation by coupon code" }
     ],
     features: ["Sponsored content", "Message ads", "Dynamic ads"],
     slug: "linkedin-ads-credit",
   },
+    {
+    id: "linkedin-career-premium",
+    title: "LinkedIn career premium",
+    description: "Boost your chainces to get good jobs  marketing and grow on your career",
+    category: "linkedin",
+    availability: true,
+    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
+    variations: [
+      { name: "3 Months", price: 999, originalPrice: 7900, subPrice: "For new & old accounts only your mail required for activation" },
+    ],
+    features: ["Jobs search", "Connections", "who view your profile?", "Job alerts"],
+    slug: "linkedin-career-premium",
+  },
+  
 
   // Creative Tools
   {
@@ -75,7 +80,7 @@ export const products: Product[] = [
     availability: true,
     images: ["/images/adobe.jpg", "/images/adove.jpg", "/images/adobe3.png"],
     variations: [
-      { name: "12 Months", price: 1999, originalPrice: 29000, subPrice: "All apps included" }
+      { name: "12 Months", price: 3999, originalPrice: 29000, subPrice: "All apps included" }
     ],
     features: ["20+ Creative apps", "100GB cloud storage", "Adobe Fonts", "Portfolio website"],
     slug: "adobe-creative-cloud",
@@ -88,10 +93,10 @@ export const products: Product[] = [
     availability: true,
     images: ["/images/canva1.jpg", "/images/canva.png", "/images/canva3.png", "/images/linkedin4.png"],
     variations: [
-      { name: "1 Month", price: 299, originalPrice: 3000, subPrice: "Single user license" },
-      { name: "12 Months", price: 699, originalPrice: 15000, subPrice: "Team access (5 users)" },
+      { name: "12 Month", price: 199, originalPrice: 3000, subPrice: "on your mail edu orgaization pro , you can access all premium features" },
+      { name: "Lifetime", price: 399, originalPrice: 15000, subPrice: "on your mail edu orgaization pro , you can access all premium features" },
     ],
-    features: ["Premium templates", "Background remover", "Brand kit", "Team collaboration"],
+    features: ["On your mail","Premium templates", "Background remover", "Stock photos", "Team collaboration"],
     slug: "canva-pro",
   },
   {
@@ -102,7 +107,7 @@ export const products: Product[] = [
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "Lifetime", price: 799, originalPrice: 7999, subPrice: "One-time payment" }
+      { name: "12months", price: 1799, originalPrice: 7999, subPrice: "One-time payment" }
     ],
     features: ["4K editing", "Motion graphics", "Audio ducking", "Color correction"],
     slug: "filmora-pro",
@@ -110,28 +115,28 @@ export const products: Product[] = [
 
   // Developer Tools
   {
-    id: "github-student-pack",
-    title: "GitHub Student Pack",
-    description: "Free developer tools and services for students.",
+    id: "perplexity-ai",
+    title: "Perplexity AI Pro",
+    description: "Advanced search, real-time web access, citations, file uploads, personalized models, API access, image generation, AI agents, faster responses, detailed answers, and enterprise-level data privacy",
     category: "developer",
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "12 Months", price: 499, originalPrice: 5000, subPrice: "Educational benefits" }
+      { name: "12 Months", price: 1499, originalPrice: 15000, subPrice: "Educational benefits" }
     ],
-    features: ["GitHub Pro", "Free domains", "Cloud credits", "Developer tools"],
-    slug: "github-student-pack",
+    features: ["Advanced search", "real-time web access", "file uploads", "image generation", "AI agents", "faster responses", "detailed answers", "enterprise-level data privacy"],
+    slug: "perplexity-ai",
   },
   {
     id: "chatgpt-plus",
     title: "ChatGPT Plus",
-    description: "Priority access to GPT-4 and new features.",
+    description: "Priority access to GPT-4 and new features. your email required for activation",
     category: "developer",
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "3 Months", price: 599, originalPrice: 6000, subPrice: "Faster response times" },
-      { name: "12 Months", price: 1999, originalPrice: 24000, subPrice: "Best value annually" },
+      { name: "1 Months", price: 599, originalPrice: 6000, subPrice: "Faster response times" },
+     
     ],
     features: ["GPT-4 access", "Faster responses", "Priority access", "Plugin support"],
     slug: "chatgpt-plus",
@@ -146,11 +151,11 @@ export const products: Product[] = [
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "1 Month", price: 299, originalPrice: 799, subPrice: "Standard plan" },
-      { name: "3 Months", price: 799, originalPrice: 2397, subPrice: "Standard plan" },
-      { name: "12 Months", price: 2599, originalPrice: 9588, subPrice: "Best Value" },
+      { name: "1 Month", price: 125, originalPrice: 799, subPrice: "4k plan single screen " },
+      { name: "3 Months", price: 350, originalPrice: 2397, subPrice: "4k plan single screen" },
+      { name: "6 Months", price: 699, originalPrice: 4999, subPrice: "4k plan single screen" },
     ],
-    features: ["4K Ultra HD", "HDR content", "Dolby Atmos", "Download on 6 devices"],
+    features: ["4K Ultra HD", "HDR content", "Dolby Atmos", "Download on 5 devices", "Ad-free","house hold solution","No password change"],
     slug: "netflix-premium",
   },
   {
@@ -161,10 +166,10 @@ export const products: Product[] = [
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "1 Month", price: 249, originalPrice: 299 },
-      { name: "6 Months", price: 1299, originalPrice: 1794 },
+      { name: "6 Month", price: 149, originalPrice: 499 ,subPrice: "4k plan single screen "},
+      { name: "12 Months", price: 249, originalPrice: 999 ,subPrice: "4k plan single screen "},
     ],
-    features: ["Prime Video", "Prime delivery", "Prime Music", "Prime Reading"],
+    features: ["Prime Video", "Unlimited movies & TV", "No Ad-free", "No password change"],
     slug: "amazon-prime-video",
   },
   {
@@ -175,11 +180,58 @@ export const products: Product[] = [
     availability: true,
     images: ["/placeholder.svg?height=400&width=600"],
     variations: [
-      { name: "1 Month", price: 199, originalPrice: 179, subPrice: "Up to 6 users" },
-      { name: "6 Months", price: 499, originalPrice: 1074, subPrice: "Up to 6 users" },
+      { name: "3 Month", price: 179, originalPrice: 399, subPrice: "only email required" },
+      { name: "6 Months", price: 450, originalPrice: 1074, subPrice: "only email required" },
+      { name: "12 Months", price: 799, originalPrice: 2000, subPrice: "only email required" },
     ],
-    features: ["6 premium accounts", "Ad-free music", "Offline downloads", "High quality audio"],
+    features: ["premium accounts", "Ad-free music", "Offline downloads", "High quality audio"],
     slug: "spotify-family",
+  },
+    {
+    id: "sony-liv",
+    title: "Sony Liv 4k",
+    description: "Sony liv 4k 12 months on customer number , activation by coupon code fully genuine method",
+    category: "entertainment",
+    availability: true,
+    images: ["/placeholder.svg?height=400&width=600"],
+    variations: [
+     
+      { name: "12 Months 4k", price: 599, originalPrice: 1499, subPrice: "only login required for actvation" },
+    ],
+
+     features: ["4k", "Ad-free ","5 device login ", "Offline downloads", "High quality audio and video","on your number"],
+    slug: "sony-liv",
+  },
+  
+    {
+    id: "zee-5",
+    title: "Zee 5 HD",
+    description: "Zee 5 HD plan 12 months on customer number , activation by coupon code fully genuine method",
+    category: "entertainment",
+    availability: true,
+    images: ["/placeholder.svg?height=400&width=600"],
+    variations: [
+     
+      { name: "12 Months HD", price: 499, originalPrice: 999, subPrice: "only login required for actvation" },
+    ],
+   
+     features: ["HD", "no Ad-free ","2 device login", "Offline downloads", "High quality audio and video","on your number"],
+    slug: "zee-5",
+  },
+   {
+    id: "jio-hotstar",
+    title: "Jio Hotstar Supper",
+    description: "Jio Hotstar Supper plan 1 month on customer number , activation by coupon code fully genuine method",
+    category: "entertainment",
+    availability: true,
+    images: ["/placeholder.svg?height=400&width=600"],
+    variations: [
+     
+      { name: "1 Month HD", price: 79, originalPrice: 999, subPrice: "only login required for actvation" },
+    ],
+   
+     features: ["HD", "no Ad-free ","5 device login", "Offline downloads", "High quality audio and video","on your number"],
+    slug: "jio-hotstar",
   },
 ];
 
@@ -239,7 +291,7 @@ export const banners = [
   {
     id: 1,
     title: "Netflix Premium",
-    subtitle: "From ₹299",
+    subtitle: "From ₹125 month",
     description: "4K Ultra HD, 4 Screens, Ad-free streaming",
     image: "/images/Netflix.png",
     bgColor: "bg-gradient-to-r from-red-500 to-red-600",
@@ -250,7 +302,7 @@ export const banners = [
   {
     id: 2,
     title: "Adobe Creative Suite",
-    subtitle: "From ₹1,999",
+    subtitle: "From ₹3,999 year",
     description: "Photoshop, Illustrator, Premiere Pro & more",
     image: "/images/Adobeicon.png",
     bgColor: "bg-gradient-to-r from-purple-500 to-purple-600",
@@ -261,8 +313,8 @@ export const banners = [
   {
     id: 3,
     title: "Spotify Family",
-    subtitle: "From ₹199",
-    description: "6 Premium accounts, Ad-free music",
+    subtitle: "From ₹169 3month",
+    description: "Ad-free music",
     image: "/images/Spotifyicon.png",
     bgColor: "bg-gradient-to-r from-green-500 to-green-600",
     decorativeElements: ["🎵", "🎧", "🎤"],
