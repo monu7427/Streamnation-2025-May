@@ -17,7 +17,7 @@ export const products: Product[] = [
     description: "Premium tools for sales research and lead generation on LinkedIn.",
     category: "linkedin",
     availability: true,
-    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
+    images: ["/images/linkedinn1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "12 Month", price: 3999, originalPrice: 25000, subPrice: "For new & old accounts , will provide activation link " },
       { name: "3 Month", price: 999, originalPrice: 4999, subPrice: "For new & old accounts , will provide activation link  " },
@@ -32,7 +32,7 @@ export const products: Product[] = [
     description: "Premium tools for sales research and lead generation on LinkedIn.",
     category: "linkedin",
     availability: true,
-    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
+    images: ["/images/linkedinsales.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "1 Month", price: 1999, originalPrice: 7900, subPrice: "For new & old accounts only your mail required for activation" },
      
@@ -47,7 +47,7 @@ export const products: Product[] = [
     description: "Boost your LinkedIn marketing campaigns with ad credit.",
     category: "linkedin",
     availability: true,
-    images: ["/images/linkedin1.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
+    images: ["/images/linkedinads.png", "/images/linkedin2.png", "/images/linkedin3.png", "/images/linkedin4.png"],
     variations: [
       { name: "₹7,000 Credit", price: 1199, originalPrice: 7000, subPrice: "Activation by coupon code" },
       { name: "₹15,000 Credit", price: 1899, originalPrice: 1500, subPrice: "Activation by coupon code" },
@@ -78,7 +78,7 @@ export const products: Product[] = [
     description: "Full suite access: Photoshop, Illustrator, and more.",
     category: "creative",
     availability: true,
-    images: ["/images/adobe.jpg", "/images/adove.jpg", "/images/adobe3.png"],
+    images: ["/images/adobe.png", "/images/adove2.jpg", "/images/adobe3.jpg"],
     variations: [
       { name: "12 Months", price: 3999, originalPrice: 29000, subPrice: "All apps included" }
     ],
@@ -105,7 +105,7 @@ export const products: Product[] = [
     description: "Professional video editing software with lifetime license.",
     category: "creative",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/filmora0.jpg","/images/filmora1.png","images/filmora2.jpg"],
     variations: [
       { name: "12months", price: 1799, originalPrice: 7999, subPrice: "One-time payment" }
     ],
@@ -120,7 +120,7 @@ export const products: Product[] = [
     description: "Advanced search, real-time web access, citations, file uploads, personalized models, API access, image generation, AI agents, faster responses, detailed answers, and enterprise-level data privacy",
     category: "developer",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/perplexity1.png", "/images/perplexity2.png", ],
     variations: [
       { name: "12 Months", price: 1499, originalPrice: 15000, subPrice: "Educational benefits" }
     ],
@@ -132,8 +132,8 @@ export const products: Product[] = [
     title: "ChatGPT Plus",
     description: "Priority access to GPT-4 and new features. your email required for activation",
     category: "developer",
-    availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    availability: false,
+    images: ["/images/chatgpt.png", "/images/chatgpt2.png", ],
     variations: [
       { name: "1 Months", price: 599, originalPrice: 6000, subPrice: "Faster response times" },
      
@@ -149,7 +149,7 @@ export const products: Product[] = [
     description: "4K Ultra HD streaming on up to 4 screens, ad-free.",
     category: "entertainment",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/netflix1.png", "/images/netflix2.png", "/images/netflix3.png",],
     variations: [
       { name: "1 Month", price: 125, originalPrice: 799, subPrice: "4k plan single screen " },
       { name: "3 Months", price: 350, originalPrice: 2397, subPrice: "4k plan single screen" },
@@ -164,7 +164,7 @@ export const products: Product[] = [
     description: "Unlimited movies & TV plus Prime delivery benefits.",
     category: "entertainment",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/prime1.png", "/images/prime2.png", "/images/prime3.jpeg","/images/prime4.jpeg"],
     variations: [
       { name: "6 Month", price: 149, originalPrice: 499 ,subPrice: "4k plan single screen "},
       { name: "12 Months", price: 249, originalPrice: 999 ,subPrice: "4k plan single screen "},
@@ -178,7 +178,7 @@ export const products: Product[] = [
     description: "Ad-free music for up to 6 users, offline downloads.",
     category: "music",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/spotify1.png", "/images/spotify2.png", ],
     variations: [
       { name: "3 Month", price: 179, originalPrice: 399, subPrice: "only email required" },
       { name: "6 Months", price: 450, originalPrice: 1074, subPrice: "only email required" },
@@ -193,7 +193,7 @@ export const products: Product[] = [
     description: "Sony liv 4k 12 months on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/sony1.png", "/images/sony2.jpeg",],
     variations: [
      
       { name: "12 Months 4k", price: 599, originalPrice: 1499, subPrice: "only login required for actvation" },
@@ -209,7 +209,7 @@ export const products: Product[] = [
     description: "Zee 5 HD plan 12 months on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/zee1.png", "/images/zee2.jpeg",],
     variations: [
      
       { name: "12 Months HD", price: 499, originalPrice: 999, subPrice: "only login required for actvation" },
@@ -224,7 +224,7 @@ export const products: Product[] = [
     description: "Jio Hotstar Supper plan 1 month on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/placeholder.svg?height=400&width=600"],
+    images: ["/images/jiohot1.png", "/images/jiohot2.jpeg","/images/jiohot3.png"],
     variations: [
      
       { name: "1 Month HD", price: 79, originalPrice: 999, subPrice: "only login required for actvation" },
@@ -349,8 +349,8 @@ export const blogs: Blog[] = [
 export const coupons: Coupon[] = [
   {
     id: "1",
-    code: "WELCOME20",
-    description: "20% off on your first order",
+    code: "WELCOME05",
+    description: "5% off on your first order",
     discount: 20,
     validUntil: new Date("2024-12-31"),
     active: true,
