@@ -58,7 +58,7 @@ export function ProductShowcase({ title, category, bgColor = "bg-white" }: Produ
                     <img
                       src={product.images[0] || "/placeholder.svg"}
                       alt={product.title}
-                      className="w-full h-full object-cover rounded-lg md:rounded-xl group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain rounded-lg md:rounded-xl group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   {discount > 0 && (
