@@ -78,7 +78,7 @@ export const products: Product[] = [
     description: "Full suite access: Photoshop, Illustrator, and more.",
     category: "creative",
     availability: true,
-    images: ["/images/adobe.png", "/images/adove2.jpg", "/images/adobe3.jpg"],
+    images: ["/images/adobe.png", "/images/adobe2.jpg", "/images/adobe3.jpg"],
     variations: [
       { name: "12 Months", price: 3999, originalPrice: 29000, subPrice: "All apps included" }
     ],
@@ -105,7 +105,7 @@ export const products: Product[] = [
     description: "Professional video editing software with lifetime license.",
     category: "creative",
     availability: true,
-    images: ["/images/filmora0.jpg","/images/filmora1.png","images/filmora2.jpg"],
+    images: ["/images/filmora0.jpg","/images/filmora1.png","images/filmora2.jpeg"],
     variations: [
       { name: "12months", price: 1799, originalPrice: 7999, subPrice: "One-time payment" }
     ],
@@ -164,7 +164,7 @@ export const products: Product[] = [
     description: "Unlimited movies & TV plus Prime delivery benefits.",
     category: "entertainment",
     availability: true,
-    images: ["/images/prime1.png", "/images/prime2.png", "/images/prime3.jpeg","/images/prime4.jpeg"],
+    images: ["/images/prime1.png", "/images/prime2.png", "/images/prime3.jpg","/images/prime4.jpg"],
     variations: [
       { name: "6 Month", price: 149, originalPrice: 499 ,subPrice: "4k plan single screen "},
       { name: "12 Months", price: 249, originalPrice: 999 ,subPrice: "4k plan single screen "},
@@ -178,7 +178,7 @@ export const products: Product[] = [
     description: "Ad-free music for up to 6 users, offline downloads.",
     category: "music",
     availability: true,
-    images: ["/images/spotify1.png", "/images/spotify2.png", ],
+    images: ["/images/spotify.png", "/images/spotify2.png", ],
     variations: [
       { name: "3 Month", price: 179, originalPrice: 399, subPrice: "only email required" },
       { name: "6 Months", price: 450, originalPrice: 1074, subPrice: "only email required" },
@@ -193,7 +193,7 @@ export const products: Product[] = [
     description: "Sony liv 4k 12 months on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/images/sony1.png", "/images/sony2.jpeg",],
+    images: ["/images/sony1.png", "/images/sony2.jpg",],
     variations: [
      
       { name: "12 Months 4k", price: 599, originalPrice: 1499, subPrice: "only login required for actvation" },
@@ -209,7 +209,7 @@ export const products: Product[] = [
     description: "Zee 5 HD plan 12 months on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/images/zee1.png", "/images/zee2.jpeg",],
+    images: ["/images/zee1.png", "/images/zee2.jpg",],
     variations: [
      
       { name: "12 Months HD", price: 499, originalPrice: 999, subPrice: "only login required for actvation" },
@@ -224,7 +224,7 @@ export const products: Product[] = [
     description: "Jio Hotstar Supper plan 1 month on customer number , activation by coupon code fully genuine method",
     category: "entertainment",
     availability: true,
-    images: ["/images/jiohot1.png", "/images/jiohot2.jpeg","/images/jiohot3.png"],
+    images: ["/images/jiohot.png", "/images/jiohot2.jpg","/images/jiohot3.png"],
     variations: [
      
       { name: "1 Month HD", price: 79, originalPrice: 999, subPrice: "only login required for actvation" },
