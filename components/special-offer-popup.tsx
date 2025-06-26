@@ -70,7 +70,7 @@ export function SpecialOfferPopup() {
 
           {/* Offer Details */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 mb-4 border border-white/20">
-            <h3 className="text-xl font-bold mb-2">Get 20% OFF</h3>
+            <h3 className="text-xl font-bold mb-2">Get 5% OFF</h3>
             <p className="text-sm mb-3">On your first order + Free setup assistance</p>
 
             <div className="space-y-1 text-xs opacity-90">
@@ -88,7 +88,7 @@ export function SpecialOfferPopup() {
           {/* Coupon Code */}
           <div className="bg-white/20 rounded-lg p-3 mb-4 border-2 border-dashed border-white/40">
             <p className="text-xs opacity-80 mb-1">Use Coupon Code</p>
-            <div className="text-lg font-bold tracking-wider">WELCOME20</div>
+            <div className="text-lg font-bold tracking-wider">WELCOME05</div>
           </div>
 
           {/* CTA Buttons */}
@@ -105,7 +105,7 @@ export function SpecialOfferPopup() {
 
             <Button
               variant="outline"
-              className="w-full border border-white text-white hover:bg-white hover:text-purple-900 py-2 text-sm"
+              className="w-full text-black border border-white text-white hover:bg-white hover:text-purple-900 py-2 text-sm"
               onClick={closePopup}
             >
               Browse Products First
