@@ -151,9 +151,9 @@ export const products: Product[] = [
     availability: true,
     images: ["/images/netflix1.png", "/images/netflix2.png", "/images/netflix3.png",],
     variations: [
-      { name: "1 Month", price: 125, originalPrice: 799, subPrice: "4k plan single screen " },
-      { name: "3 Months", price: 350, originalPrice: 2397, subPrice: "4k plan single screen" },
-      { name: "6 Months", price: 699, originalPrice: 4999, subPrice: "4k plan single screen" },
+      { name: "1 Month", price: 145, originalPrice: 649, subPrice: "4k plan single screen " },
+      { name: "3 Months", price: 399, originalPrice: 2397, subPrice: "4k plan single screen" },
+      { name: "6 Months", price: 799, originalPrice: 4999, subPrice: "4k plan single screen" },
     ],
     features: ["4K Ultra HD", "HDR content", "Dolby Atmos", "Download on 5 devices", "Ad-free","house hold solution","No password change"],
     slug: "netflix-premium",
@@ -212,7 +212,7 @@ export const products: Product[] = [
     images: ["/images/zee1.png", "/images/zee2.jpg",],
     variations: [
      
-      { name: "12 Months HD", price: 499, originalPrice: 999, subPrice: "only login required for actvation" },
+      { name: "12 Months HD", price: 299, originalPrice: 999, subPrice: "only login required for actvation" },
     ],
    
      features: ["HD", "no Ad-free ","2 device login", "Offline downloads", "High quality audio and video","on your number"],
@@ -291,7 +291,7 @@ export const banners = [
   {
     id: 1,
     title: "Netflix Premium",
-    subtitle: "From ₹125 month",
+    subtitle: "From ₹145 month",
     description: "4K Ultra HD, 4 Screens, Ad-free streaming",
     image: "/images/Netflix.png",
     bgColor: "bg-gradient-to-r from-red-500 to-red-600",
